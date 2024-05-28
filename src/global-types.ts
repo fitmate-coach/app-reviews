@@ -1,6 +1,6 @@
 import { Review as AppStoreReview, AppInformation as AppStoreAppInformation } from "./appstore-reviews"
-import { Review as PlayStoreReview } from "./playstore-reviews"
-import { AppInformation as PlayStoreAppInformation } from "google-play-scraper"
+import { Review as PlayStoreReview} from "./playstore-reviews"
+import { IAppItem as PlayStoreAppInformation } from 'google-play-scraper'
 
 export type Config = {
     apps: (AppStoreConfig | PlayStoreConfig)[]

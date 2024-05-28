@@ -1,14 +1,15 @@
 {
-  "name": "app-reviews",
+  "name": "@fitmate-coach/app-reviews",
   "version": "1.0.0",
   "description": "This module help you to have access to latest reviews in App Store and Google Play Store",
   "main": "lib/index.js",
-  "type": "lib/index.d.ts",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepublish": "tsc"
   },
   "keywords": [
     "AppStore",
@@ -27,13 +28,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/armanso/app-reviews.git"
+    "url": "git+https://github.com/fitmate-coach/app-reviews.git"
   },
   "bugs": {
-    "url": "https://github.com/armanso/app-reviews/issues"
+    "url": "https://github.com/fitmate-coach/app-reviews/issues"
   },
-  "homepage": "https://github.com/armanso/app-reviews#readme",
+  "homepage": "https://github.com/fitmate-coach/app-reviews#readme",
   "devDependencies": {
+    "@types/android-versions": "^1.8.3",
     "@types/node": "^13.11.1",
     "prettier": "^2.0.4",
     "tslint": "^6.1.1",
@@ -43,7 +45,7 @@
   "dependencies": {
     "android-versions": "^1.5.0",
     "axios": "^0.19.2",
-    "google-play-scraper": "^7.1.2",
+    "google-play-scraper": "^7.1.3",
     "googleapis": "^48.0.0"
   }
 }

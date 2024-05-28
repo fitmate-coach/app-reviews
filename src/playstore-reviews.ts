@@ -1,7 +1,7 @@
 import { Data, PlayStoreConfig, PublishedReviews } from "./global-types"
 
 import { google, androidpublisher_v3 } from "googleapis"
-import { app, AppInformation } from "google-play-scraper"
+import { IAppItem, app } from "google-play-scraper"
 import { get } from "android-versions"
 
 export default class PlayStoreReviews {
@@ -86,7 +86,7 @@ export default class PlayStoreReviews {
         }
     }
 
-    generateSlackMessage = (review: Review, appInformation: AppInformation, config: PlayStoreConfig): string => {
+    generateSlackMessage = (review: Review, appInformation: IAppItem, config: PlayStoreConfig): string => {
         var stars = ""
         for (var i = 0; i < 5; i++) {
             stars += i < review.rating ? "★" : "☆"
