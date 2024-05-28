@@ -1,6 +1,6 @@
 {
   "name": "@fitmate-coach/app-reviews",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This module help you to have access to latest reviews in App Store and Google Play Store",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
